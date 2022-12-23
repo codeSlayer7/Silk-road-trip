@@ -11,7 +11,8 @@ import AlbumPage from "./pages/AlbomPage";
 import './utils/i18n';
 import '../src/styles/styles.scss';
 import Scheduler from "./pages/Scheduler";
-
+import ArticlesPage from "./pages/ArticlesPage";
+import Article from "./components/Article/article";
 function App() {
 
   const [bg, setBg] = useState(null);
@@ -34,6 +35,8 @@ function App() {
         <Route path="/profile" element={<Profile />} />
         <Route path='/scheduler' element={<Scheduler />} />
         <Route path="/albumPage" element={<AlbumPage/>}/>
+        <Route path="/article" element={<ArticlesPage/>}/>
+        <Route path="/article/:articleId" element={<Article/>}/>
       </Routes>
 
       <Footer />

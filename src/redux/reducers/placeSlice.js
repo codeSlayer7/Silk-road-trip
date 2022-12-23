@@ -10,6 +10,7 @@ const initialState = {
   "issykKul": null,
   "naryn": null,
   "chosen":[],
+  
 };
 
 

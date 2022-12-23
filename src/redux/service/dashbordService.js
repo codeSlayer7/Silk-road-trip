@@ -35,6 +35,9 @@ const getJalalAbad = () => {
   return API.get(`http://34.159.147.205/place/?region=jalal-abad`);
 };
 
+const getArticle = () => {
+  return API.get('comment/')
+}
 
 // const update = (id, data) => {
 //   return API.put(`/tutorials/${id}`, data);
@@ -61,6 +64,7 @@ const dashbordService = {
   getOsh,
   getNaryn,
   getTalas,
+  getArticle
 };
 
 export default dashbordService;
